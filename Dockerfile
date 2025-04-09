@@ -6,16 +6,14 @@ ENV KC_METRICS_ENABLED=true
 ENV KEYCLOAK_ADMIN=admin
 ENV KEYCLOAK_ADMIN_PASSWORD=admin
 # Set Base URL and Admin URL
-ENV KC_HOSTNAME=my-keycloak.onrender.com
+ENV KC_HOSTNAME=https://my-keycloak.onrender.com
 ENV KC_HTTP_PORT=8080
 ENV KC_HTTPS_PORT=8443
 ENV KC_PROXY=edge
-ENV HTTP_ENABLED=TRUE
+ENV KC_FEATURES=hostname
 
-
-# Expose the port for Render
+# Expose the port
 EXPOSE 8080
-EXPOSE 8443
 
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
-CMD ["start"]
+CMD ["start-dev"]
