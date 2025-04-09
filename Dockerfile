@@ -1,6 +1,3 @@
-# Enable health and metrics for Keycloak
-ENV KC_HEALTH_ENABLED=true
-ENV KC_METRICS_ENABLED=true
 # Set the Keycloak Admin credentials
 ENV KEYCLOAK_ADMIN=admin
 ENV KEYCLOAK_ADMIN_PASSWORD=admin
