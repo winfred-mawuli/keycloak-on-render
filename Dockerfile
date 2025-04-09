@@ -3,8 +3,8 @@ FROM quay.io/keycloak/keycloak:24.0.1
 ENV KC_HEALTH_ENABLED=true
 ENV KC_METRICS_ENABLED=true
 # Set the Keycloak Admin credentials
-ENV KEYCLOAK_ADMIN=admin
-ENV KEYCLOAK_ADMIN_PASSWORD=admin
+ENV KC_BOOTSTRAP_ADMIN_USERNAME=admin
+ENV KC_BOOTSTRAP_ADMIN_PASSWORD=admin
 # Set Base URL and Admin URL
 ENV KC_HOSTNAME=https://my-keycloak.onrender.com
 ENV KC_HTTP_PORT=8080
