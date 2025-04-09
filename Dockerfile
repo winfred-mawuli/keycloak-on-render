@@ -6,7 +6,7 @@ ENV KC_METRICS_ENABLED=true
 ENV KC_HOSTNAME=my-keycloak.onrender.com
 ENV KC_HTTP_PORT=8080
 ENV KC_HTTPS_PORT=8443
-ENV KC_PROXY=edge  # For reverse proxying (Render typically does this)
+ENV KC_PROXY=edge
 
 # Expose the port
 EXPOSE 8080
