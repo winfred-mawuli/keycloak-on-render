@@ -6,7 +6,7 @@ ENV KC_METRICS_ENABLED=true
 
 # Set the Keycloak Admin credentials
 ENV KEYCLOAK_ADMIN=admin
-ENV KEYCLOAK_ADMIN_PASSWORD=adminpassword  # Use a strong password in production!
+ENV KEYCLOAK_ADMIN_PASSWORD=admin
 
 # Set Base URL and Admin URL (Use the Render URL)
 ENV KC_HOSTNAME=keycloak-on-render-fj9c.onrender.com
