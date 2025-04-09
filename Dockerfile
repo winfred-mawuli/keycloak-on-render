@@ -8,8 +8,6 @@ ENV KEYCLOAK_ADMIN_PASSWORD=admin
 # Set Base URL and Admin URL
 ENV KC_HOSTNAME=https://my-keycloak.onrender.com
 ENV KC_HTTP_PORT=8080
-ENV KC_HTTPS_PORT=8443
-ENV KC_PROXY=edge
 ENV KC_FEATURES=hostname
 
 # Expose the port
